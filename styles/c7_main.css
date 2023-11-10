@@ -70,11 +70,15 @@ section blockquote {
 }
 section ul {
 	padding: 0 0 .25em 1.25em;
+	list-style-type: none;
 }
 section li {
 	padding-bottom: .35em;
+	float: left;
 }
-
+section a {
+	
+}
 /* the styles for the article */
 article {
 	padding: .5em 0;
