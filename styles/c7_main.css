@@ -5,20 +5,21 @@
 }
 #nav_menu ul {
 	list-style: none;
-	margin-left: 1.25em;
-	margin-bottom: 1.5em;
+	padding: 1em 0;
+	background-color: #931420;
 }
 #nav_menu li {
-	width: 200px;
-	margin-bottom: .53m;
-	border: 2px solid #931420;
+	display: inline;
 }
-#nav_menu li a {
-	display: block;
-	padding: .5em 0 .5em 1.5em;
+#nav_menu a {
+	padding: 1em 2em;
 	text-decoration: none;
 	font-weight: bold;
-	color: #931420;
+	color: white;
+	border-right: 2px solid white;
+}
+#nav_menu a.current {
+	color: white italics;
 }
 html {
 	background-color: white;
