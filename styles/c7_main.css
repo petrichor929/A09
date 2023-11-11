@@ -19,7 +19,8 @@
 	border-right: 2px solid white;
 }
 #nav_menu a.current {
-	color: white italics;
+	color: white;
+	font-style: italic;
 }
 html {
 	background-color: white;
