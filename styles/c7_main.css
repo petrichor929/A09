@@ -97,7 +97,11 @@ section li {
 	float: left;
 }
 section a {
-	
+	width: 160px;
+	padding: 1em;
+	background-color: #800000;
+	text-color: white;
+	font-style: bold;
 }
 /* the styles for the article */
 article {
