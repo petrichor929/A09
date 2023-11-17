@@ -3,25 +3,44 @@
 	margin: 0;
 	padding: 0;
 }
-#nav_menu ul {
+nav_menu ul {
 	list-style: none;
 	padding: 0;
 	padding: 0;
-	background-color: #931420;
+	position: relative;
 }
-#nav_menu li {
+nav li {
 	display: inline;
+	float: left;
 }
-#nav_menu a {
-	padding: 1em 2em;
+nav ul li a {
+	padding: 1em;
 	text-decoration: none;
 	font-weight: bold;
 	color: white;
-	border-right: 2px solid white;
+	display: block;
+	width: 160px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #800000;
 }
-#nav_menu a.current {
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+nav ul li:hover ul {
+	display: block;
+	font-size: 80%;
+	font-weight: bold;
+}
+#nav_menu ::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.current {
 	color: yellow;
-	font-style: italic;
 }
 html {
 	background-color: white;
@@ -90,19 +109,11 @@ section blockquote {
 }
 section ul {
 	padding: 0 0 .25em 1.25em;
-	list-style-type: none;
 }
 section li {
 	padding-bottom: .35em;
-	float: left;
 }
-section a {
-	width: 160px;
-	padding: 1em;
-	background-color: #800000;
-	text-color: white;
-	font-style: bold;
-}
+
 /* the styles for the article */
 article {
 	padding: .5em 0;
