@@ -1,31 +1,32 @@
-/* the styles for the elements */
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 800px;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+	width: 800px;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
 }
-
 * {
 	margin: 0;
 	padding: 0;
 }
-
 html {
 	background-color: white;
 }
 
 #nav_menu ul {
 	list-style: none;
-	padding: 0;
-	padding: 0;
+	margin: 0 0;
+	padding: 0 0;
 	position: relative;
 }
 
 ul li {
 	float: left;
+
 }
 
 #nav_menu ul li a {
@@ -50,7 +51,7 @@ ul li {
 	top: 100%;
 }
 
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover > ul{
 	display: block;
 }
 
@@ -73,29 +74,25 @@ ul li {
 }
 
 header {
-	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%);
+	background-image: -moz-linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%);
+	background-image: -webkit-linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%);
+	background-image: -ms-linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%);
+	/* I changed some of the percentages to white because it did not look exactly like the example.*/
 }
-
 header img {
 	float: left;
 	padding-left: 30px;
 	padding-right: 30px;
 }
-
 header h2 {
-	font-size: 175%;
+	font-size: 170%;
 	color: #800000;
 }
-
 header h3 {
 	font-size: 130%;
 	font-style: italic;
@@ -114,7 +111,7 @@ section {
 }
 
 section p {
-	padding-bottom: .5em;
+	padding-bottom: 0.5em;
 }
 
 aside {
@@ -129,16 +126,15 @@ section h1 {
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 }
-
 section article h1 {
 	font-size: 150%;
 	padding-top: 0.5em;
-	padding-bottom: 0.253m;
+	padding-bottom: 0.25em;
 	margin: 0;
 }
 
 article {
-	padding-top: .5em;
+	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	border-top: 2px solid #800000;
 	border-bottom: 2px solid #800000;
@@ -153,8 +149,8 @@ section article img {
 }
 
 section h2 {
-	color: #800000;
 	font-size: 130%;
+	color: #800000;
 	padding-top: 0.5em;
 	padding-bottom: 0.25em;
 }
@@ -165,7 +161,7 @@ section article h2 {
 
 aside h3 {
 	font-size: 105%;
-	padding-bottom: .25em;
+	padding-bottom: 0.25em;
 }
 
 section article h3 {
@@ -174,8 +170,8 @@ section article h3 {
 }
 
 aside h2 {
-	color: #800000;
 	font-size: 130%;
+	color: #800000;
 	padding-top: 0.5em;
 	padding-bottom: 0.25em;
 }
@@ -185,7 +181,7 @@ a:focus, a:hover {
 }
 
 .shadow {
-	text-shadow: 2px 2px 2px #800000;
+	text-shadow: 1px 1px #800000;
 }
 
 aside img {
@@ -198,8 +194,8 @@ aside p {
 
 section blockquote {
 	padding-right: 2em;
-	font-style: italic;
 	padding-left: 2em;
+	font-style: italic;
 }
 
 section ul {
